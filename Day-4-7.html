@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=0;
+        var arr=[]
+        while (num<100 || isNaN(num) ){
+            num =parseInt( prompt("enter the num"),10)
+        }
+        for (let i=1;i<=num;i++){
+            var flag=0
+            for (let j=2;j<=(i/2);j++){
+                if (i%j==0){
+                    flag=0
+                    break
+                }else{
+                    flag=1
+                }
+
+            }
+            if (flag==1){
+                arr.push(i)
+            }
+            if (i==2 || i==3){
+                arr.push(i)
+            }
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>
